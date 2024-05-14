@@ -1,1 +1,37 @@
-{"nbformat":4,"nbformat_minor":0,"metadata":{"colab":{"provenance":[],"authorship_tag":"ABX9TyNu9oexdh+Lryotb2JYpFge"},"kernelspec":{"name":"python3","display_name":"Python 3"},"language_info":{"name":"python"}},"cells":[{"cell_type":"code","source":["start = \"Hello World!\"\n","print (start)"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"p0YWp1uoIapa","executionInfo":{"status":"ok","timestamp":1715707476206,"user_tz":180,"elapsed":618,"user":{"displayName":"Bruno S","userId":"13727810886485250036"}},"outputId":"f5723e9c-d941-489f-bc50-2e56e36bf7af"},"execution_count":2,"outputs":[{"output_type":"stream","name":"stdout","text":["Hello World!\n"]}]},{"cell_type":"code","execution_count":null,"metadata":{"id":"bpHfc1_2cauj"},"outputs":[],"source":[]},{"cell_type":"markdown","source":["*   aulas no senai de python para ciencia de dados\n","\n","exercicio de fixação\n","1"],"metadata":{"id":"xeFvBzngciXf"}},{"cell_type":"code","source":["time1=int(input('gols do primeiro time: '))\n","time2=int(input('gols do segundo time: '))\n","if time1 == time2:\n","  print('impate')\n","elif time1 < time2:\n","  print('time 2 ganhou')\n","else:\n","  print('time 1 ganhou')"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"luCu5cS_ekhI","executionInfo":{"status":"ok","timestamp":1715362129752,"user_tz":180,"elapsed":10443,"user":{"displayName":"Bruno S","userId":"13727810886485250036"}},"outputId":"b2ebd432-50bb-493a-98e5-a2789d1bdb81"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["gols do primeiro time: 0\n","gols do segundo time: 50\n","time 2 ganhou\n"]}]},{"cell_type":"markdown","source":["2"],"metadata":{"id":"qs1C_BvTjRLX"}},{"cell_type":"code","source":["valor_da_compra=int(input('valor total da compra: '))\n","vezes=int(input('quantidade de prestações: '))\n","prestacao = valor_da_compra/vezes\n","print('Valor da mensalidade é $:',prestacao)\n"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"HfK8mJtNgSmJ","executionInfo":{"status":"ok","timestamp":1715366525189,"user_tz":180,"elapsed":10056,"user":{"displayName":"Bruno S","userId":"13727810886485250036"}},"outputId":"169e387b-b804-4445-99d5-5035439324f5"},"execution_count":null,"outputs":[{"name":"stdout","output_type":"stream","text":["valor total da compra: 50\n","quantidade de prestações: 2\n"]}]},{"cell_type":"markdown","source":["3\n","\n","\n","```\n","# Isto está formatado como código\n","```\n","\n","infantil a 5-7\n","infantil b 8-11\n","juvenila 12-13\n","juvenilb 14-17\n"],"metadata":{"id":"lfKfkKYk2Sbu"}},{"cell_type":"code","source":["idade=int(input('idade: '))\n","if idade <= 7:\n","  print('Infantil A')\n","elif idade <= 11:\n","  print('Infantil B')\n","elif idade <= 13:\n","  print('Juvinil A')\n","elif idade <= 17:\n","  print('Juvenil B')\n","else:\n","  print('Adulto')"],"metadata":{"id":"iD0Z1d7Lp8GN","colab":{"base_uri":"https://localhost:8080/"},"executionInfo":{"status":"ok","timestamp":1715368300624,"user_tz":180,"elapsed":3410,"user":{"displayName":"Bruno S","userId":"13727810886485250036"}},"outputId":"66d09411-c63d-4a1e-878d-7d1060edd4f8"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["idade: 5\n","Infantil A\n"]}]}]}
+start = "Hello World!"
+print (start)
+
+nome=0   #zero é variavel vazia?
+if nome:
+  print(nome)
+else:
+  print("sem nome")
+
+time1=int(input('gols do primeiro time: '))
+time2=int(input('gols do segundo time: '))
+if time1 == time2:
+  print('impate')
+elif time1 < time2:
+  print('time 2 ganhou')
+else:
+  print('time 1 ganhou')
+
+valor_da_compra=int(input('valor total da compra: '))
+vezes=int(input('quantidade de prestações: '))
+prestacao = valor_da_compra/vezes
+print('Valor da mensalidade é $:',prestacao)
+
+
+idade=int(input('idade: '))
+if idade <= 7:
+  print('Infantil A')
+elif idade <= 11:
+  print('Infantil B')
+elif idade <= 13:
+  print('Juvinil A')
+elif idade <= 17:
+  print('Juvenil B')
+else:
+  print('Adulto')
+
+
