@@ -1,11 +1,15 @@
 start = "Hello World!"
 print (start)
 
+###################################
+
 nome=0   #zero é variavel vazia?
 if nome:
   print(nome)
 else:
   print("sem nome")
+
+###################################
 
 time1=int(input('gols do primeiro time: '))
 time2=int(input('gols do segundo time: '))
@@ -16,11 +20,14 @@ elif time1 < time2:
 else:
   print('time 1 ganhou')
 
+###################################
+
 valor_da_compra=int(input('valor total da compra: '))
 vezes=int(input('quantidade de prestações: '))
 prestacao = valor_da_compra/vezes
 print('Valor da mensalidade é $:',prestacao)
 
+##################################
 
 idade=int(input('idade: '))
 if idade <= 7:
@@ -33,5 +40,83 @@ elif idade <= 17:
   print('Juvenil B')
 else:
   print('Adulto')
+
+#################################
+
+# estatisticas
+import statistics as st
+dados=[10,15,20,25,30,35,40,45,50,15]
+
+media=statistics.mean #nao precisa escrever statistics por extenso, so por o apelido st
+
+media=st.mean(dados)
+print(media)
+
+mediana=st.median(dados)
+print(mediana)
+
+moda=st.mode(dados)
+print(moda)
+
+import statistics as st
+notas=[7.5,8.2,6,9.5,5.8,7.1,8.6,6.3,9,8.8]
+media=st.median(notas)
+print(media)
+
+desvio_padrao=st.stdev(notas)
+print(f"Desvio Padrão: {desvio_padrao: .3f}")
+
+#variancia
+variancia=st.variance(notas)
+print(variancia)
+
+import statistics as st     # a correlacação são os elementos, quanto mais perto de 1 é 100% de verdade, 10 elementos
+hora_estudo=[5,7,3,8,6,4,9,5,7,6]
+notas=[75,85,60,90,80,70,95,75,85,80]
+
+#correlação
+correlacao=st.correlation(hora_estudo,notas)
+print(correlacao)
+
+
+#atividade 1
+
+import statistics as st
+corridas=[10,13,20,25,30]
+media=st.mean(corridas)
+mediana = min(corridas)
+print(media,'\n',mediana)
+
+#atividade 2
+
+import statistics as st
+tempo=[]
+transportelist=[]
+
+while True:
+  temp=int(input('quanto tempo: '))
+
+  if temp==0: #para sair do while e continuar com o codigo
+    break
+
+  transporte=str(input('digite o transporte:'))
+  tempo.append(temp)
+  transportelist.append(transporte)
+
+
+media=st.mean(tempo)
+mediana=st.median(tempo)
+moda=st.mode(tempo)
+
+print(tempo)
+print(media, mediana, moda)
+
+#atividade 3
+
+import statistics as st
+consumo=[20, 25 ,30, 35, 40]
+variancia=st.variance(consumo)
+print(consumo)
+
 
 
